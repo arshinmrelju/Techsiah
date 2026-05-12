@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { GradientText } from "./ui/GradientText";
-import { Twitter, Linkedin, Github, Instagram } from "lucide-react";
+import { MessageCircle, Briefcase, GitBranch, Camera } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -20,17 +20,17 @@ export const Footer = () => {
             for the modern intelligent enterprise.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors">
-              <Twitter size={18} />
+            <Link href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors" title="X (Twitter)">
+              <MessageCircle size={18} />
             </Link>
-            <Link href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors">
-              <Linkedin size={18} />
+            <Link href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors" title="LinkedIn">
+              <Briefcase size={18} />
             </Link>
-            <Link href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors">
-              <Github size={18} />
+            <Link href="https://github.com/arshinmrelju" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors" title="GitHub">
+              <GitBranch size={18} />
             </Link>
-            <Link href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors">
-              <Instagram size={18} />
+            <Link href="#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-primary/20 transition-colors" title="Instagram">
+              <Camera size={18} />
             </Link>
           </div>
         </div>
